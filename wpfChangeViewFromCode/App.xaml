@@ -1,0 +1,18 @@
+﻿<Application x:Class="wpfChangeViewFromCode.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:wpfChangeViewFromCode"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="ContentControl" x:Key="BasicStyle">
+            <Setter Property="FontFamily" Value="Courier New"/>
+        </Style>
+        <Style TargetType="Button" BasedOn="{StaticResource BasicStyle}">
+            <Setter Property="Foreground" Value="DarkGreen"/>
+            <Setter Property="Background" Value="Blue"/>
+        </Style>
+        <Style x:Key="btnPurple" TargetType="Button" >
+            <Setter Property="Background" Value="Purple"/>
+        </Style>
+    </Application.Resources>
+</Application>
